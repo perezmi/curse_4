@@ -1,0 +1,232 @@
+%% Created by Maple 2022.0, Linux
+%% Source Worksheet: км5
+%% Generated: Sun Nov 17 17:18:22 MSK 2024
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{mathtools}
+\usepackage{maple}
+\usepackage[utf8]{inputenc}
+\usepackage[svgnames]{xcolor}
+\usepackage{amsmath}
+\usepackage{breqn}
+\usepackage{textcomp}
+\begin{document}
+\lstset{basicstyle=\ttfamily,breaklines=true,columns=flexible}
+\pagestyle{empty}
+\DefineParaStyle{Maple Bullet Item}
+\DefineParaStyle{Maple Heading 1}
+\DefineParaStyle{Maple Warning}
+\DefineParaStyle{Maple Heading 4}
+\DefineParaStyle{Maple Heading 2}
+\DefineParaStyle{Maple Heading 3}
+\DefineParaStyle{Maple Dash Item}
+\DefineParaStyle{Maple Error}
+\DefineParaStyle{Maple Title}
+\DefineParaStyle{Maple Ordered List 1}
+\DefineParaStyle{Maple Text Output}
+\DefineParaStyle{Maple Ordered List 2}
+\DefineParaStyle{Maple Ordered List 3}
+\DefineParaStyle{Maple Normal}
+\DefineParaStyle{Maple Ordered List 4}
+\DefineParaStyle{Maple Ordered List 5}
+\DefineCharStyle{Maple 2D Output}
+\DefineCharStyle{Maple 2D Input}
+\DefineCharStyle{Maple Maple Input}
+\DefineCharStyle{Maple 2D Math}
+\DefineCharStyle{Maple Hyperlink}
+\begin{Maple Normal}
+{$ \displaystyle \mathit{with} (\mathit{Student} [\mathit{LinearAlgebra}])\colon 
+\\
+ \esRcy \esacy \esscy \espcy \esicy \esshcy \esiecy \esmcy \esucy \esrcy \esacy \esvcy \esncy \esiecy \esncy \esicy \esyacy \esdcy \esvcy \esicy \eszhcy \esiecy \esncy \esicy \esyacy \esvcy \esycy \eskhcy \esocy \esdcy \esncy \esocy \esgcy \esocy \eszcy \esvcy \esiecy \esncy \esacy \mathrm{A}\colon 
+\\
+ \mathit{xA} \coloneqq \mathit{l2} \cdot \cos (\phi2)+\mathit{d4} \cdot \cos (\phi3 +\phi2);
+\\
+ \mathit{yA} \coloneqq \mathit{d1} +\mathit{l2} \cdot \sin (\phi2)+\mathit{d4} \cdot \sin (\phi3 +\phi2);
+\\
+ \mathit{PsiA} \coloneqq \phi2 +\phi3 ;
+\\
+ U \coloneqq \left[\begin{array}{c}
+ 0.5 
+\\
+ - 1.2 
+\\
+ 0 
+\end{array}\right]; $}
+\end{Maple Normal}
+% \mapleresult
+\begin{dmath*}
+\mathit{xA} \coloneqq \mathit{l2} \cos \! \left(\phi2 \right)+\mathit{d4} \cos \! \left(\phi2 +\phi3 \right)
+\end{dmath*}
+\vspace{-\bigskipamount}
+% \mapleresult
+\begin{dmath*}
+\mathit{yA} \coloneqq \mathit{d1} +\mathit{l2} \sin \! \left(\phi2 \right)+\mathit{d4} \sin \! \left(\phi2 +\phi3 \right)
+\end{dmath*}
+\vspace{-\bigskipamount}
+% \mapleresult
+\begin{dmath*}
+\mathit{PsiA} \coloneqq \phi2 +\phi3 
+\end{dmath*}
+\vspace{-\bigskipamount}
+% \mapleresult
+\begin{dmath}\label{(1)}
+U \coloneqq \left[\begin{array}{c}
+ 0.5 
+\\
+ - 1.2 
+\\
+ 0 
+\end{array}\right]
+\end{dmath}
+\begin{Maple Normal}
+{$ \displaystyle J \coloneqq \left[\begin{array}{cccc}
+\frac{\partial}{\partial \mathit{d1}}(\mathit{xA}) & \frac{\partial}{\partial \phi2}(\mathit{xA}) & \frac{\partial}{\partial \phi3}(\mathit{xA}) & \frac{\partial}{\partial \mathit{d4}}(\mathit{xA}) 
+\\
+ \frac{\partial}{\partial \mathit{d1}}(\mathit{yA}) & \frac{\partial}{\partial \phi2}(\mathit{yA}) & \frac{\partial}{\partial \phi3}(\mathit{yA}) & \frac{\partial}{\partial \mathit{d4}}(\mathit{yA}) 
+\\
+ \frac{\partial}{\partial \mathit{d1}}(\mathit{PsiA}) & \frac{\partial}{\partial \phi2}(\mathit{PsiA}) & \frac{\partial}{\partial \phi3}(\mathit{PsiA}) & \frac{\partial}{\partial \mathit{d4}}(\mathit{PsiA}) 
+\end{array}\right];
+\\
+ K \coloneqq \left[\begin{array}{cccc}
+1 & 0 & 0 & 0 
+\\
+ 0 & \mathit{K0}^{2}\mathit{l2}^{2}+\mathit{d4}^{2} & 0 & 0 
+\\
+ 0 & 0 & \mathit{d4}^{2} & 0 
+\\
+ 0 & 0 & 0 & 1 
+\end{array}\right];
+\\
+ \mathit{K1} \coloneqq \mathit{subs} (\mathit{d1} = 0.5,\phi2 =\frac{60\cdot \mathrm{Pi}}{180},\phi3 =\frac{30\cdot \mathrm{Pi}}{180},\mathit{l2} = 1.5,\mathit{d4} =1,\mathit{K0} =1,K);
+\\
+ 
+\\
+ \mathit{Jz0} {\moverset{}{\coloneqq}}\mathit{subs} (\mathit{d1} = 0.5,\phi2 =\frac{60\cdot \mathrm{Pi}}{180},\phi3 =\frac{30\cdot \mathrm{Pi}}{180},\mathit{l2} = 1.5,\mathit{d4} =1,\mathit{K0} =1,J); $}
+\end{Maple Normal}
+% \mapleresult
+\begin{dmath*}
+J \coloneqq \left[\begin{array}{cccc}
+0 & -\mathit{l2} \sin \! \left(\phi2 \right)-\mathit{d4} \sin \! \left(\phi2 +\phi3 \right) & -\mathit{d4} \sin \! \left(\phi2 +\phi3 \right) & \cos \! \left(\phi2 +\phi3 \right) 
+\\
+ 1 & \mathit{l2} \cos \! \left(\phi2 \right)+\mathit{d4} \cos \! \left(\phi2 +\phi3 \right) & \mathit{d4} \cos \! \left(\phi2 +\phi3 \right) & \sin \! \left(\phi2 +\phi3 \right) 
+\\
+ 0 & 1 & 1 & 0 
+\end{array}\right]
+\end{dmath*}
+\vspace{-\bigskipamount}
+% \mapleresult
+\begin{dmath*}
+K \coloneqq \left[\begin{array}{cccc}
+1 & 0 & 0 & 0 
+\\
+ 0 & \mathit{K0}^{2} \mathit{l2}^{2}+\mathit{d4}^{2} & 0 & 0 
+\\
+ 0 & 0 & \mathit{d4}^{2} & 0 
+\\
+ 0 & 0 & 0 & 1 
+\end{array}\right]
+\end{dmath*}
+\vspace{-\bigskipamount}
+% \mapleresult
+\begin{dmath*}
+\mathit{K1} \coloneqq \left[\begin{array}{cccc}
+1 & 0 & 0 & 0 
+\\
+ 0 &  3.25 & 0 & 0 
+\\
+ 0 & 0 & 1 & 0 
+\\
+ 0 & 0 & 0 & 1 
+\end{array}\right]
+\end{dmath*}
+\vspace{-\bigskipamount}
+% \mapleresult
+\begin{dmath}\label{(2)}
+\mathit{Jz0} \coloneqq \left[\begin{array}{cccc}
+0 & - 1.5 \sin \! \left(\frac{\pi}{3}\right)-\sin \! \left(\frac{\pi}{2}\right) & -\sin \! \left(\frac{\pi}{2}\right) & \cos \! \left(\frac{\pi}{2}\right) 
+\\
+ 1 &  1.5 \cos \! \left(\frac{\pi}{3}\right)+\cos \! \left(\frac{\pi}{2}\right) & \cos \! \left(\frac{\pi}{2}\right) & \sin \! \left(\frac{\pi}{2}\right) 
+\\
+ 0 & 1 & 1 & 0 
+\end{array}\right]
+\end{dmath}
+\begin{Maple Normal}
+
+\end{Maple Normal}
+\begin{Maple Normal}
+{$ \displaystyle 
+\\
+  $}
+\end{Maple Normal}
+\begin{Maple Normal}
+{$ \displaystyle \esnum \mathrm{2}.\mathrm{1}.\mathrm{1}\esMcy \esiecy \estcy \esocy \esdcy \esocy \esmcy \espcy \esscy \esiecy \esvcy \esdcy \esocy \esocy \esbcy \esrcy \esacy \estcy \esncy \esocy \esjcy \esmcy \esacy \estcy \esrcy \esicy \estscy \esycy ,\esvcy \esycy \eschcy \esicy \esscy \eslcy \esiecy \esncy \esncy \esocy \esjcy \esscy \espcy \esocy \esmcy \esocy \esshchcy \essoftcy \esyucy \esscy \estcy \esacy \esncy \esdcy \esacy \esrcy \estcy \esncy \esocy \esjcy \esfcy \esucy \esncy \eskcy \estscy \esicy \esicy \esmcy \esacy \estcy \esiecy \esmcy \esacy \estcy \esicy \eschcy \esiecy \esscy \eskcy \esocy \esgcy \esocy \espcy \esacy \eskcy \esiecy \estcy \esacy (\mathrm{pinv},\mathrm{PseudoInverse}\esicy \espcy \esrcy \esocy \eschcy)\colon  $}
+\end{Maple Normal}
+\begin{Maple Normal}
+{$ \displaystyle \mathit{dqPinv} {\moverset{}{\coloneqq}}\mathit{K1} \cdot \mathit{Pseudoinverse} (\mathit{Jz0})\cdot U  $}
+\end{Maple Normal}
+% \mapleresult
+\begin{dmath}\label{(3)}
+\mathit{dqPinv} \coloneqq \left[\begin{array}{c}
+- 0.4556624325 
+\\
+ - 0.485382699 \sqrt{3}+ 0.455807325 
+\\
+  0.3849001803 
+\\
+ - 0.4556624325 
+\end{array}\right]
+\end{dmath}
+\begin{Maple Normal}
+{$ \displaystyle \esnum \mathrm{2}.\mathrm{1}.\mathrm{2}.\esMcy \esiecy \estcy \esocy \esdcy \esocy \esmcy \textrm{ SVD}-\esrcy \esacy \eszcy \eslcy \esocy \eszhcy \esiecy \esncy \esicy \esyacy . $}
+\end{Maple Normal}
+\begin{Maple Normal}
+{$ \displaystyle Q ,R \coloneqq \mathit{QRDecomposition} (\mathit{Jz0}) $}
+\end{Maple Normal}
+% \mapleresult
+\begin{dmath}\label{(4)}
+Q ,R \coloneqq \left[\begin{array}{ccc}
+0 & -\frac{ 2.437500000 \sqrt{3}+ 3.25}{\sqrt{ 38.94921875+ 15.84375000 \sqrt{3}}} & \frac{ 7.921875000 \sqrt{3}}{\sqrt{ 694.2393952+ 282.4024658 \sqrt{3}}} 
+\\
+ 1 &  0.0 &  0.0 
+\\
+ 0 & \frac{ 3.25}{\sqrt{ 38.94921875+ 15.84375000 \sqrt{3}}} & \frac{ 17.82421875+ 7.921875000 \sqrt{3}}{\sqrt{ 694.2393952+ 282.4024658 \sqrt{3}}} 
+\end{array}\right],\left[\begin{array}{cccc}
+1 &  2.437500000 & 0 & 1 
+\\
+ 0 & \sqrt{ 38.94921875+ 15.84375000 \sqrt{3}} & \frac{ 6.50+ 2.437500000 \sqrt{3}}{\sqrt{ 38.94921875+ 15.84375000 \sqrt{3}}} &  0.0 
+\\
+ 0 & 0 & \frac{\sqrt{ 694.2393952+ 282.4024658 \sqrt{3}}}{ 38.94921875+ 15.84375000 \sqrt{3}} &  0.0 
+\end{array}\right]
+\end{dmath}
+\begin{Maple Normal}
+{$ \displaystyle \mathit{dqQR} \coloneqq Q \cdot \mathit{Inverse} (R)\cdot U ; $}
+\end{Maple Normal}
+% \mapleresult
+\begin{dmath}\label{(5)}
+\mathit{dqQR} \coloneqq \left[\begin{array}{ccc}
+0 & -\frac{ 2.437500000 \sqrt{3}+ 3.25}{\sqrt{ 38.94921875+ 15.84375000 \sqrt{3}}} & \frac{ 7.921875000 \sqrt{3}}{\sqrt{ 694.2393952+ 282.4024658 \sqrt{3}}} 
+\\
+ 1 &  0.0 &  0.0 
+\\
+ 0 & \frac{ 3.25}{\sqrt{ 38.94921875+ 15.84375000 \sqrt{3}}} & \frac{ 17.82421875+ 7.921875000 \sqrt{3}}{\sqrt{ 694.2393952+ 282.4024658 \sqrt{3}}} 
+\end{array}\right]\cdot \mathit{Inverse} \! \left(\left[\begin{array}{cccc}
+1 &  2.437500000 & 0 & 1 
+\\
+ 0 & \sqrt{ 38.94921875+ 15.84375000 \sqrt{3}} & \frac{ 6.50+ 2.437500000 \sqrt{3}}{\sqrt{ 38.94921875+ 15.84375000 \sqrt{3}}} &  0.0 
+\\
+ 0 & 0 & \frac{\sqrt{ 694.2393952+ 282.4024658 \sqrt{3}}}{ 38.94921875+ 15.84375000 \sqrt{3}} &  0.0 
+\end{array}\right]\right)\cdot \left[\begin{array}{c}
+ 0.5 
+\\
+ - 1.2 
+\\
+ 0 
+\end{array}\right]
+\end{dmath}
+\begin{Maple Normal}
+
+\end{Maple Normal}
+\end{document}

@@ -1,0 +1,325 @@
+{
+  "main": {
+    "id": "f96dd62c4b4f98e6",
+    "type": "split",
+    "children": [
+      {
+        "id": "3d9c4a7e6629f8f3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a181938e920d4fc9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Универ/Право/Правоведение.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Правоведение"
+            }
+          },
+          {
+            "id": "bc3332e6965c6aee",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Универ/Вычмех/фото/IMG20240925112712.jpg"
+              },
+              "icon": "lucide-image",
+              "title": "IMG20240925112712"
+            }
+          },
+          {
+            "id": "6096be6704b39782",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Универ/Вычмех/02.12.2024 (Практика).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "02.12.2024 (Практика)"
+            }
+          },
+          {
+            "id": "51c911407735f747",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-12-02 09.28.50.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2024-12-02 09.28.50.excalidraw"
+            }
+          },
+          {
+            "id": "a7c9f6e996e027a2",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Универ/Вычмех/фото/IMG20240925123020.jpg"
+              },
+              "icon": "lucide-image",
+              "title": "IMG20240925123020"
+            }
+          },
+          {
+            "id": "bc3cec46906ac54c",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Универ/Вычмех/фото/IMG20240925123333.jpg"
+              },
+              "icon": "lucide-image",
+              "title": "IMG20240925123333"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "86bf18b9411245d3",
+    "type": "split",
+    "children": [
+      {
+        "id": "975f8f6560d659e9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "87553948366d009f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "f9e30288ccc5f5ad",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          },
+          {
+            "id": "f71eefe0d443bd92",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Универ/Вычмех/фото/IMG20240925112712.jpg"
+              },
+              "icon": "lucide-image",
+              "title": "IMG20240925112712"
+            }
+          },
+          {
+            "id": "c694e6f930c6572b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 378.5
+  },
+  "right": {
+    "id": "31bcb61bee7da4d6",
+    "type": "split",
+    "children": [
+      {
+        "id": "dc3c367e4623c315",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "98120d9232755c3e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Универ/УМРУ/Лабы/отчет.pdf",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для отчет"
+            }
+          },
+          {
+            "id": "f06444cafb48c38f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Универ/УМРУ/Лабы/отчет.pdf",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из отчет"
+            }
+          },
+          {
+            "id": "1fdf259719fdb30c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "9806840f9421c162",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Универ/УМРУ/Лабы/отчет.pdf"
+              },
+              "icon": "lucide-list",
+              "title": "Структура отчет"
+            }
+          },
+          {
+            "id": "22609d017f80aa54",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Плагин больше не активен"
+            }
+          },
+          {
+            "id": "43a59012e7e12fef",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Плагин больше не активен"
+            }
+          },
+          {
+            "id": "1600de6ef16e7c8c",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Плагин больше не активен"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "command-palette:Открыть палитру команд": false,
+      "templates:Вставить шаблон": false,
+      "audio-recorder:Начать/остановить запись": false,
+      "super-duper-audio-recorder:Start/Stop Recording": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "omnisearch:Omnisearch": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "a181938e920d4fc9",
+  "lastOpenFiles": [
+    "Универ/Вычмех/25.09.2024 (Лекция).md",
+    "Универ/Вычмех/tmpf3n5wlyw",
+    "Универ/Вычмех/tmpy8rytapc",
+    "Универ/Вычмех/tmpqphgb5r3",
+    "Универ/Вычмех/tmpa9xtvray",
+    "Универ/Вычмех/tmp2fpwjh5v",
+    "Универ/Вычмех/tmpb_0wy83_",
+    "Универ/Вычмех/tmpu1zqfttj",
+    "Универ/Вычмех/tmppwluehbv",
+    "Универ/Вычмех/tmp9go__600",
+    "Универ/Вычмех/tmpui89_iu7",
+    "Универ/Вычмех/27.11.2024 (Лекция).md",
+    "Универ/Вычмех/30.10.2024 (Лекция).md",
+    "Универ/Вычмех/Класс соединения.md",
+    "Универ/Вычмех/Сочленение.md",
+    "Универ/Вычмех/20.11.2024 (Лекция).md",
+    "Универ/Вычмех/18.11.2024 (Лабораторная).md",
+    "Универ/Вычмех/13.11.2024 (Лекция).md",
+    "Универ/Вычмех/06.11.2024 (Лекиця).md",
+    "Универ/Вычмех/02.12.2024 (Практика).md",
+    "Универ/Вычмех/0. Вычмех.md",
+    "Универ/Вычмех/le cursach/ебанько? курсач это 1.md",
+    "Excalidraw/Drawing 2024-12-02 09.28.50.excalidraw.md",
+    "Универ/УМРУ/26.11.2024 Практика.md",
+    "Универ/Вычмех/20.11.2024 (Консультация).md",
+    "Универ/Вычмех/le cursach/фото/Pasted image 20240925132200.png",
+    "Универ/0. Полезности/0. Завещание.md",
+    "Универ/0. Полезности/Отсюда в pdf.md",
+    "Универ/Вычмех/le cursach/фото/Курсовая работа_TUR15.png",
+    "Универ/Вычмех/le otchet 5/КМ-5 Отчет.md",
+    "Универ/Вычмех/фото/IMG20240925123020.jpg",
+    "Универ/Вычмех/фото/IMG20240925112712.jpg",
+    "Универ/Вычмех/фото/IMG20240925123333.jpg",
+    "Универ/Вычмех/Untitled.md",
+    "Универ/Вычмех/om(t).png",
+    "Универ/Вычмех/d4(t).png",
+    "Универ/Вычмех/d1(t).png",
+    "Универ/Вычмех/Обобщенная координата d1(t).png",
+    "Универ/Вычмех/КМ-5 Отчет.pandoc.md",
+    "Универ/Вычмех/Без названия.md",
+    "Универ/УМРУ/Лабы/отчет.md",
+    "Универ/БЖД/0. БЖД.md",
+    "Универ/УМРУ/19.11.2024 Практика.md",
+    "Универ/УМРУ/27.11.2024 Лекция.md",
+    "Универ/УМРУ/фото/27.11.24/фото 10:00.jpg",
+    "Без названия 2.canvas",
+    "Без названия.canvas",
+    "Без названия 1.canvas"
+  ]
+}

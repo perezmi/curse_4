@@ -1,0 +1,187 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5879,        179]
+NotebookOptionsPosition[      5180,        158]
+NotebookOutlinePosition[      5577,        174]
+CellTagsIndexPosition[      5534,        171]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"l1", "=", "1.5"}], ";", 
+  RowBox[{"l2", "=", "1.0"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"xA", "=", "1.6"}], ";", 
+  RowBox[{"yA", "=", "0.7"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"F", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"l1", " ", 
+       RowBox[{"Cos", "[", "\[Theta]1", "]"}]}], "+", 
+      RowBox[{"l2", " ", 
+       RowBox[{"Cos", "[", 
+        RowBox[{"\[Theta]2", "+", "\[Theta]2"}], "]"}]}], "-", "xA"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"l1", " ", 
+       RowBox[{"Sin", "[", "\[Theta]1", "]"}]}], "+", 
+      RowBox[{"l2", " ", 
+       RowBox[{"Sin", "[", 
+        RowBox[{"\[Theta]1", "+", "\[Theta]2"}], "]"}]}], "-", "yA"}]}], 
+    "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"DF", "=", 
+   RowBox[{"D", "[", 
+    RowBox[{"F", ",", 
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{"\[Theta]1", ",", "\[Theta]2"}], "}"}], "}"}]}], "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.941073640697998*^9, 3.9410736658564177`*^9}, {
+  3.941073708093636*^9, 3.941073925489573*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"36e35b78-f166-463b-b730-1f7e144761b6"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", "1.5`"}], " ", 
+      RowBox[{"Sin", "[", "\[Theta]1", "]"}]}], ",", 
+     RowBox[{
+      RowBox[{"-", "2.`"}], " ", 
+      RowBox[{"Sin", "[", 
+       RowBox[{"2", " ", "\[Theta]2"}], "]"}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"1.5`", " ", 
+       RowBox[{"Cos", "[", "\[Theta]1", "]"}]}], "+", 
+      RowBox[{"1.`", " ", 
+       RowBox[{"Cos", "[", 
+        RowBox[{"\[Theta]1", "+", "\[Theta]2"}], "]"}]}]}], ",", 
+     RowBox[{"1.`", " ", 
+      RowBox[{"Cos", "[", 
+       RowBox[{"\[Theta]1", "+", "\[Theta]2"}], "]"}]}]}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.941073927965199*^9},
+ CellLabel->"Out[22]=",ExpressionUUID->"47837c47-4ebe-4137-b314-2401a5d3dd5b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"q0", "=", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0.5"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"F0", "=", 
+  RowBox[{"F", "/.", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\[Theta]1", "->", 
+      RowBox[{"q0", "[", 
+       RowBox[{"[", "1", "]"}], "]"}]}], ",", 
+     RowBox[{"\[Theta]2", "->", 
+      RowBox[{"q0", "[", 
+       RowBox[{"[", "2", "]"}], "]"}]}]}], "}"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"While", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Norm", "[", "F0", "]"}], ">", 
+    RowBox[{"10", "^", 
+     RowBox[{"-", "4"}]}]}], ",", "\[IndentingNewLine]", " ", 
+   RowBox[{
+    RowBox[{"DF0", "=", 
+     RowBox[{"DF", "/.", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\[Theta]1", "->", 
+         RowBox[{"q0", "[", 
+          RowBox[{"[", "1", "]"}], "]"}]}], ",", 
+        RowBox[{"\[Theta]2", "->", 
+         RowBox[{"q0", "[", 
+          RowBox[{"[", "2", "]"}], "]"}]}]}], "}"}]}]}], ";", 
+    "\[IndentingNewLine]", " ", 
+    RowBox[{"q0", "=", 
+     RowBox[{"q0", "-", 
+      RowBox[{
+       RowBox[{"Inverse", "[", "DF0", "]"}], ".", "F0"}]}]}], ";", 
+    "\[IndentingNewLine]", " ", 
+    RowBox[{"F0", "=", 
+     RowBox[{"F", "/.", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\[Theta]1", "->", 
+         RowBox[{"q0", "[", 
+          RowBox[{"[", "1", "]"}], "]"}]}], ",", 
+        RowBox[{"\[Theta]2", "->", 
+         RowBox[{"q0", "[", 
+          RowBox[{"[", "2", "]"}], "]"}]}]}], "}"}]}]}], ";", 
+    "\[IndentingNewLine]", " ", 
+    RowBox[{"Print", "[", 
+     RowBox[{"\"\<\[Theta]1= \>\"", ",", 
+      RowBox[{"q0", "[", 
+       RowBox[{"[", "1", "]"}], "]"}], ",", "\"\< \[Theta]2= \>\"", ",", 
+      RowBox[{"q0", "[", 
+       RowBox[{"[", "2", "]"}], "]"}], ",", "\"\< |F|= \>\"", ",", 
+      RowBox[{"Norm", "[", "F0", "]"}]}], "]"}], ";"}]}], 
+  "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.9410739368209257`*^9, 3.94107398280367*^9}, {
+  3.9410741423453493`*^9, 3.9410743503186007`*^9}, {3.9410744719200993`*^9, 
+  3.941074522820258*^9}, {3.941074564399439*^9, 3.941074571496128*^9}, {
+  3.941074638864648*^9, 3.941074644975646*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"a932b64a-f3e1-470c-8494-73c88c114533"],
+
+Cell[BoxData["F"], "Output",
+ CellChangeTimes->{{3.941074496334475*^9, 3.941074529647534*^9}, 
+   3.9410750068215303`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"17cf1534-456e-43ee-b2d5-8f531c022a8d"]
+}, Open  ]]
+},
+WindowSize->{1024.5, 522.75},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"13.2 for Linux x86 (64-bit) (January 30, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"4cb63d52-9b57-4273-8e66-c908ace86abf"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1258, 35, 204, "Input",ExpressionUUID->"36e35b78-f166-463b-b730-1f7e144761b6"],
+Cell[1841, 59, 822, 25, 37, "Output",ExpressionUUID->"47837c47-4ebe-4137-b314-2401a5d3dd5b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2700, 89, 2261, 61, 249, "Input",ExpressionUUID->"a932b64a-f3e1-470c-8494-73c88c114533"],
+Cell[4964, 152, 200, 3, 33, "Output",ExpressionUUID->"17cf1534-456e-43ee-b2d5-8f531c022a8d"]
+}, Open  ]]
+}
+]
+*)
+
